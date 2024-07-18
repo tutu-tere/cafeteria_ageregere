@@ -1,0 +1,35 @@
+// sección inferior
+.section {
+  display: flex;
+  position: relative;
+
+  &__left {
+    width: 70%;
+    overflow: hidden;
+  }
+  
+  &__right {
+    width: 30%;
+    position: relative;
+  }
+  // &--map {
+  //      height: 77%;
+  //      object-fit: cover;
+  //      position: absolute;
+  //      width: 45%;
+  //      top: 10%;
+  //      right: 10%;
+  //    }
+}
+
+.section-half {
+  display: flex;
+  
+  &__left {
+    width: 50%;
+  }
+  
+  &__right {
+    width: 50%;
+  }
+}

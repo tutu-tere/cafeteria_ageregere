@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+:root {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+}
+
+h1, .fs-xxxl {
+  font-size: 70px;
+  font-family: "PT Mono", monospace;
+  padding-bottom: 2rem;
+}
+
+h2, .fs-xxl {
+  font-size: 40px;
+  font-family: "PT Mono", monospace;
+  padding-bottom: 1.5rem;
+}
+
+h3, .fs-xl {
+  font-size: 30px;
+  font-family: "PT Mono", monospace;
+  padding-bottom: 1rem;
+}
+
+h4, .fs-lg {
+  font-size: 18px;
+  font-family: "PT Mono", monospace;
+  padding-bottom: 1rem;
+}
+
+p, .fs-md {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 0.8rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 5rem;
+  padding-block: 2rem;
+}
+
+.section {
+  display: flex;
+  position: relative;
+}
+.section__left {
+  width: 70%;
+  overflow: hidden;
+}
+.section__right {
+  width: 30%;
+  position: relative;
+}
+
+.section-half {
+  display: flex;
+}
+.section-half__left {
+  width: 50%;
+}
+.section-half__right {
+  width: 50%;
+}
+
+.arrow {
+  position: relative;
+  flex-grow: 1;
+  background-color: #eacb31;
+  height: 10rem;
+  width: 10rem;
+  aspect-ratio: 1/1;
+}
+.arrow__overlay {
+  position: absolute;
+  display: flex;
+  bottom: 3rem;
+  right: 1rem;
+  background-color: #e4572e;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 800;
+  height: 100%;
+  aspect-ratio: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-family: "PT Mono", monospace;
+  text-align: center;
+  padding: 0.5rem;
+  min-width: 9rem;
+  max-width: 100%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.img-10 {
+  width: 10%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-20 {
+  width: 20%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-30 {
+  width: 30%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-40 {
+  width: 40%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-50 {
+  width: 50%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-60 {
+  width: 60%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-70 {
+  width: 70%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-80 {
+  width: 80%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-90 {
+  width: 90%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-100 {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.map {
+  min-width: 450px;
+  max-width: 600px;
+  height: 85%;
+  position: relative;
+  float: right;
+}
+.map__offset {
+  background-image: url("../img/img-4.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 102;
+}
+.map--u-r {
+  top: 2rem;
+  right: 3rem;
+}
+.map--blue {
+  background-color: #3c91e6;
+}
+.map--yellow {
+  background-color: #eacb31;
+}
+.map--orange {
+  background-color: #e4572e;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stats {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #fff;
+  bottom: 0;
+  right: 25%;
+}
+.stats__info {
+  padding: 1rem;
+  max-width: 10rem;
+  text-align: center;
+}
+.stats__info:not(:first-of-type) {
+  padding-left: 1rem;
+}
+
+.text-block {
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+
+.btn--primary {
+  background-color: #fff;
+  color: #a2a2a2;
+  border: 1px solid #a2a2a2;
+}
+.btn--primary:hover {
+  color: #000;
+  border-color: #000;
+}
+
+.btn--secondary {
+  background-color: #4ca866;
+  color: #fff;
+}
+.btn--secondary:hover {
+  color: #454545;
+  background-color: #9dcfab;
+}
+
+a {
+  text-decoration: none;
+  color: #454545;
+}
+a:hover {
+  color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.coffee {
+  position: absolute;
+  max-width: 13rem;
+  min-height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: -5rem;
+  z-index: 1000;
+}/*# sourceMappingURL=main.css.map */
